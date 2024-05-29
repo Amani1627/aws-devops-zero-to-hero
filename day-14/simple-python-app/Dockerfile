@@ -5,12 +5,12 @@ FROM python:3.8
 WORKDIR /app
 
 # Copy the requirements file
-COPY requirements.txt .
+COPY requirements.txt 
 
 # Install the project dependencies
 RUN pip install -r requirements.txt
 
-# Copy the application code into the container
+# Copy the application     code into the container
 COPY . .
 
 # Expose the port the Flask application will be listening on
